@@ -16,12 +16,13 @@ document.addEventListener("keydown", function(event) {
   console.log(event); // testing keydown events
 
   // replaces existing body content with updated content.
-  document.body.innerHTML = `
-  <h1>You Pressed: ${event.key}</h1> 
-  <br> 
-  <h2>The Code is: ${event.keyCode}</h2>
-  <button><a href="/">Go Back</a></button>
-  `;
+  // document.getElementById("content") = `
+  // <h1>You Pressed: ${event.key}</h1> 
+  // <br> 
+  // <h2>The Code is: ${event.keyCode}</h2>
+  // <button><a href="/">Go Back</a></button>
+  // `;
+  
   
 })
 

@@ -8,21 +8,69 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <link rel="stylesheet" href="./css/normalize.css">
+  <!-- <link rel="stylesheet" href="./css/debug.css"> -->
   <link href="./css/styles.css">
-  <link rel="stylesheet" href="./css/debug.css">
   <title>KeyCode Tester</title>
 </head>
 <body>
 
-  <div class="container">
-    <div class="columns">
-      <div class="column">
-          <h1>KeyCode Tester</h1>
-                    
-          <h2>Press Any Key!</h2>
+<section class="hero is-dark is-fullheight">
+  <div class="hero-head"> <!-- sticks at top -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <h4><strong class="has-text-warning">JavaScript Key Code Tester</strong></h4>
+          </a>
+        </div>
+        <div id="navbarMenuHero" class="navbar-menu is-active">
+          <div class="navbar-end">
+            <span class="navbar-item">
+              <a href="https://github.com/gyasikn" class="button is-warning is-inverted">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Github</span>
+              </a>
+            </span>
+            <span class="navbar-item">
+              <a href="http://www.gyasiknunez.com/" class="button is-warning is-inverted">
+                <span class="icon">
+                  <i class="fas fa-globe"></i>
+                </span>
+                <span>Portfolio</span>
+              </a>
+            </span>
+            <span class="navbar-item">
+              <a href="mailto:gyasiknunez@gmail.com" class="button is-warning">
+                <span class="icon">
+                  <i class="far fa-envelope"></i>
+                </span>
+                <span>Contact</span>
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
+    </nav>
+  </div>
+
+  <div class="hero-body"><!-- stays at center -->
+    <div class="container has-text-centered">
+        <h1 id="content" class="has-text-centered has-text-warning">Find the Key Code of Any Pressed Key</h1>
+
+        <h2 id="content" class="has-text-centered has-text-warning">Press Any Key!</h2>
     </div>
   </div>
+
+  <div class="hero-foot"><!-- sticks at bottom -->
+      <div class="container">
+        <p class="has-text-warning has-text-centered">
+          <span class>Page built with <a href="https://bulma.io/"><strong><u>Bulma CSS</u></strong></a> - App inspired by <a href="http://keycode.info/"><strong><u>Wes Bos</u></strong></a></span>
+        </p>
+      </div>
+  </div>
+</section>
 
   
   <script src="./js/script.js"></script>
