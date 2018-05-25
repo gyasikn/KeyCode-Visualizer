@@ -15,27 +15,32 @@ document.addEventListener("keydown", function(event) {
 
   console.log(event); // testing keydown events
 
-  // replaces existing body content with updated content.
-  // document.getElementById("content") = `
+  var element = document.getElementById("content");  // changes the innter html of specific DOM elements
+  element.innerHTML = `
+    <div class="card has-background-dark has-text-warning">
+      <div class="card-content">
+        <div class="media">
+          <div class="media-content has-text-centered">
+            <h1>You Pressed: ${event.key}</h1> 
+            <br> 
+            <h2>The Key Code is: ${event.keyCode}</h2>
+            <br>
+            <button class="button is-warning is-inverted"><a href="/">Reset</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+
+})
+
+
+
+  // THIS CODE OVERWRITES EVERYTHING ON THE PAGE WITH NEW HTML CONTENT - NO GOOD
+  // var element = document.getElementById("content");
+  // element.innerHTML = `
   // <h1>You Pressed: ${event.key}</h1> 
   // <br> 
   // <h2>The Code is: ${event.keyCode}</h2>
   // <button><a href="/">Go Back</a></button>
   // `;
-  
-  
-})
-
-
-
-
-
-// var results = document.createElement("P");
-// var text = document.createTextNode(
-//   `You Pressed: ${event.key} & The Code Is: ${event.keyCode}`
-// );
-
-// results.appendChild(text);
-// document.body.appendChild(results);
-
-// this works but i cant figure out how to remove the previous element after creating a new one.
